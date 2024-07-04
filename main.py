@@ -28,17 +28,12 @@
 ## show avail actions
 # I know there's a way to list all actions and a description of what they do
 
-## (maybe) TODO: clear screen when next command is run.
-# something here. Not needed for shipping
+## clear screen when next command is run.
 
 import os
 
 list_of_items = []
 list_of_items = ["apple"]
-#class list_of_items():
-    #def __init__(self) -> None:
-        #pass
-        ## I actually don't know what goes here. Let's just do a list for now.
 
 def add_item_to_list():
     new_item = input("enter task to do:\n")
@@ -94,3 +89,8 @@ while True:
 
     print("continue to next task")
     continue
+
+## so, how hard do I want to make this?
+## I think this is enough for the purpose of this exercise.
+## I can make more difficult with the Rust, and then when I want an easier version of it, 
+# I implement over here first to make sure the thought is fleshed out.
