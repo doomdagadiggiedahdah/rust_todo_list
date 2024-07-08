@@ -37,3 +37,4 @@ I'd love to know if this types of doc is useful, and if so, message me on github
     - yeah getting stuck on this. brb (23:10:01) -- (23:19:18) 
     - ok, figured it out. (23:28:35). I was able to use the compiler hints to figure it out
         - vec.push to add to the vector, gives the vector a type Vec<$str>, so I needed to set the type hints to accept that. And I sleep now.
+- I ended up finding this guide about primitive types, macros, modules; probably helpful in the future (https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/std/primitive.char.html)
