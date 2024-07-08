@@ -21,7 +21,22 @@ I'd love to know if this types of doc is useful, and if so, message me on github
 
 ## thoughts
 (ooh. I could take these thoughts and turn it into a blog post.)
-- (2024.07.07__22.33.03) I don't think I'll be able to finish this tonight, so I'll take out one or two chunks at a time.
+(as in, I have the structure of how I went about this written out, I can get rid of the irrelevant, summarize, then have a small post.)
+
+## All tasks
+- write out rest of the tasks
+- interactive: ask for user input, then quit
+- add to list
+- delete from list
+- show commands
+- clear screen >:)
+
+## Done tasks
+- create list
+- func to print list
+
+### (2024.07.07__22.33.03) 
+- I don't think I'll be able to finish this tonight, so I'll take out one or two chunks at a time.
 - I started with just having a list to add to, so let's get a hello world, a list to add multiple things to (print it), then call it a night
 - Updated.
 - and I've got hello world. (22:41:10) great.
@@ -38,3 +53,4 @@ I'd love to know if this types of doc is useful, and if so, message me on github
     - ok, figured it out. (23:28:35). I was able to use the compiler hints to figure it out
         - vec.push to add to the vector, gives the vector a type Vec<$str>, so I needed to set the type hints to accept that. And I sleep now.
 - I ended up finding this guide about primitive types, macros, modules; probably helpful in the future (https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/std/primitive.char.html)
+

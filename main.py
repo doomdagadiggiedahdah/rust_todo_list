@@ -1,35 +1,5 @@
 ## make a cli based todolist (2024.07.03__23.23.20) -- (2024.07.04__00.04.42) (have basic functionality. )
 
-## what needs have you:
-	##- add an item
-	##- check off an item
-		##- optional; get items done that day
-	##- delete an item
-	##- get list of items outstanding
-    ## show list of actions
-
-## For rust I think it's fine to use google (like the olden days) to write the Rust version. No LLMs.
-
-
-## Add item
-# needs a container to push to (I wonder how Rust treats variable size objects)
-# need a command to add to it
-# prompt using saying "{task} was added"
-
-## check off on item
-# currently, this just deletes the item.
-# access the list of todos, pick number to remove
-# prompt using saying "{task} was deleted"
-
-## get list of outstanding items
-# print out list of items (this will be first).
-# I want this to eventually save to a file so the items are persistent when you close.
-
-## show avail actions
-# I know there's a way to list all actions and a description of what they do
-
-## clear screen when next command is run.
-
 import os
 
 list_of_items = []
@@ -94,3 +64,33 @@ while True:
 ## I think this is enough for the purpose of this exercise.
 ## I can make more difficult with the Rust, and then when I want an easier version of it, 
 # I implement over here first to make sure the thought is fleshed out.
+
+
+
+## what needs have you:
+	##- add an item
+	##- check off an item
+		##- optional; get items done that day
+	##- delete an item
+	##- get list of items outstanding
+    ## show list of actions
+
+## Add item
+# needs a container to push to (I wonder how Rust treats variable size objects)
+# need a command to add to it
+# prompt using saying "{task} was added"
+
+## check off on item
+# currently, this just deletes the item.
+# access the list of todos, pick number to remove
+# prompt using saying "{task} was deleted"
+
+## get list of outstanding items
+# print out list of items (this will be first).
+# I want this to eventually save to a file so the items are persistent when you close.
+
+## show avail actions
+# I know there's a way to list all actions and a description of what they do
+
+## clear screen when next command is run.
+
