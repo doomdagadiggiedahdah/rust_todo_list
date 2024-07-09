@@ -54,3 +54,13 @@ I'd love to know if this types of doc is useful, and if so, message me on github
         - vec.push to add to the vector, gives the vector a type Vec<$str>, so I needed to set the type hints to accept that. And I sleep now.
 - I ended up finding this guide about primitive types, macros, modules; probably helpful in the future (https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/std/primitive.char.html)
 
+### (2024.07.08__19.44.03) 
+- gonna try adding an item with no user interaction. print before, add, print
+- yeah passing vectors is a thing here. I was curious about this.
+- learning about ownership. Neat. and very relevant
+    - "note: consider changing this parameter type in function `get_list_items` to borrow instead if owning the value isn't necessary". This is exactly what I want for get_list_items, let's figure that out.
+- Jesus (20:27:56) added another value to the list lol.
+    - but in the process learned a lil about ownership (copy traits, there's another one).
+    - reading the error messages is suprisingly helpful, very grateful.
+    - I think I'll deal with this again when I get a variable length input message.
+        - (but I do enjoy this "taking things slow" work. This is nice.)
