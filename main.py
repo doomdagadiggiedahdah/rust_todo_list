@@ -11,7 +11,7 @@ def add_item_to_list():
     return print(f"'{new_item}' was added to list. Nice")
 
 def delete_item():
-    enum_list_items = { ind:item for (ind,item) in enumerate(get_list_items()) } 
+    enum_list_items = { ind:item for (ind,item) in enumerate(get_todo_items()) } 
     print(enum_list_items)
 
     ## could use some error handling, what if it's not in the list?
@@ -25,7 +25,7 @@ def delete_item():
     #myDict = { k:v for (k,v) in zip(keys, values)}  
     ## then I can prove it by displaying list
 
-def get_list_items():
+def get_todo_items():
     return list_of_items
 
 clear_screen = lambda: os.system("clear")
@@ -48,7 +48,7 @@ while True:
     if action == "2":
         delete_item()
     if action == "3":
-        print(get_list_items())
+        print(get_todo_items())
     if action == "4":
         clear_screen()
     if action == "5":

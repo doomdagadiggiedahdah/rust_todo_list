@@ -59,8 +59,29 @@ I'd love to know if this types of doc is useful, and if so, message me on github
 - yeah passing vectors is a thing here. I was curious about this.
 - learning about ownership. Neat. and very relevant
     - "note: consider changing this parameter type in function `get_list_items` to borrow instead if owning the value isn't necessary". This is exactly what I want for get_list_items, let's figure that out.
-- Jesus (20:27:56) added another value to the list lol.
+- Jesus (20:27:56) added another value to the vector lol.
     - but in the process learned a lil about ownership (copy traits, there's another one).
     - reading the error messages is suprisingly helpful, very grateful.
     - I think I'll deal with this again when I get a variable length input message.
         - (but I do enjoy this "taking things slow" work. This is nice.)
+- (20:55:34)  back to it. What next? let's delete something. (21:04:17) got it.
+- Awesome, so I've got the basic, static functionality. But nothing that someone could interact with.
+- Let's next figure out a single interactable element.
+- (21:21:32) Awesome, now I've got basic interactivity. Now I need to make a case statement.
+- (21:44:58) Checking in, I'm using a match statement to check which command to run and am having difficulty with the diff between String and &str. I've got a basic concept of what's going on here, so I don't think it'll be too hard.
+- And now learning the diff between &String and &str. I think normally this would annoy me, but for some reason this is kind of nice.
+- (22:08:18) I spoke too soon, I'm tired. Taking a break.
+- When I get back, need to figure out how to get the match statement working.
+
+### (2024.07.09) 
+- (09:03:47) had an idea, got it to work. removed the interactions needing to operate on the vector, and now I've got basic interaction working. Just need to find out how to handle the vector correctly.
+- but having a sign of something else not working. having the returned vector exist "somewhere". Getting a compiler error of the vec from the "add" func. This needs to be owned by something else? Will check later. (09:11:50) 
+
+### (2024.07.12) 
+- (01:21:20) I only have a bit in me. But enough to figure out what my problem is.
+- Borrowing. (side note, found I can pass the references to get_todo_items. Was using .clone(), but this is less memory and "more idiomatic" source: https://stackoverflow.com/questions/42954008/how-to-pass-one-vec-to-multiple-functions-in-rust. This answer was super informative.)
+- ok, some easy reading and I think I've got something (https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html). Need to make the vec mutable, and then have some mutable references.
+    - oh you know it's already mutable vec
+    - ahhhh this may be a deadend, can't have multiple mutable references. I'd need another for delete_item.
+        - oh maybe not, can't borrow more than one at a time. Maybe.
+- you know, getting tired. This was fun though. (02:12:05) 
